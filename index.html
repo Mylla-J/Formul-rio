@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Curso de Astronomia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>💫Bem-vindo(a) ao Curso de Astronomia✨</h1>
+        <nav>
+            <a href="index.html">Página Inicial☄️</a>
+            <a href="desenvolvedores.html">Desenvolvedoras👩‍💻</a>
+            <a href="server.php">Dados php🎲</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>🌖Cadastre-se  aqui para Explorar o Universo🌙</h2>
+        <form action="server.php"method="post">
+            <div class="form-group">
+                <label for="nome">✨Digite seu nome Completo:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Ex: Myllena jayane...">
+            </div>
+            <div class="form-group">
+                <label for="email">✨Digite seu email:</label>
+                <input type="email" id="email" name="email" required placeholder="Ex: nome@gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="senha">🔑Digite sua senha de email:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">📞Digite seu telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Ex: (xx) xxxx-xxxx">
+            </div>
+            <div class="form-group">
+                <label for="data-nascimento">🗓️Digite sua data de Nascimento:</label>
+                <input type="date" id="data-nascimento" name="data-nascimento">
+            </div>
+            <div class="form-group">
+                <label for="genero">🚺🚹informe seu gênero:</label>
+                <select id="genero" name="genero">
+                    <option value="feminino">Feminino</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="outros">Outros</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>✨Qual desses é o seu principal interesse?</label>
+                <label><input type="checkbox" name="interesses[]" value="Planetas"> 🌏Planetas🪐</label>
+                <label><input type="checkbox" name="interesses[]" value="Estrelas"> 🌟Estrelas🌟</label>
+                <label><input type="checkbox" name="interesses[]" value="Galáxias"> 🌌Galáxias🌌</label>
+            </div>
+            <div class="form-group">
+                <label for="nivel-conhecimento">✨Qual seu nível de conhecimento em astronomia?</label>
+                <select id="nivel-conhecimento" name="nivel-conhecimento">
+                    <option value="iniciante">Iniciante</option>
+                    <option value="intermediario">Intermediário</option>
+                    <option value="avancado">Avançado</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ultimo-observatorio">✨Você já visitou um observatório astronômico? Se sim, qual?</label>
+                <input type="text" id="ultimo-observatorio" name="ultimo-observatorio" placeholder="Ex: Nome do observatório">
+            </div>
+            <div class="form-group">
+                <label for="favorito-sistema-planetario">☄️Qual seu sistema planetário favorito?</label>
+                <input type="text" id="favorito-sistema-planetario" name="favorito-sistema-planetario" placeholder="Ex: Sistema Solar">
+            </div>
+            <div class="form-group">
+                <label for="upload-documento">🖼️Envie-nos uma foto ou documento do seu sistema planetário favorito:</label>
+                <input type="file" id="upload-documento" name="upload-documento" accept=".jpg, .png, .pdf">
+            </div>
+            <div class="form-group">
+                <label for="constelacoes">🌌Selecione sua(s) constelação(ões) favorita(s):</label>
+                <select id="constelacoes" name="constelacoes[]" multiple size="5">
+                    <option value="orion">Órion💫</option>
+                    <option value="ursa-maior">Ursa Maior🐻</option>
+                    <option value="ursa-menor">Ursa Menor🧸</option>
+                    <option value="cancer">Câncer♋</option>
+                    <option value="leo">Leão♌</option>
+                    <option value="andromeda">Andrômed🌟</option>
+                    <option value="cassiopeia">Cassiopeia⭐</option>
+                    <option value="gêmeos">Gêmeos♊</option>
+                    <option value="touro">Touro♉</option>
+                    <option value="peixes">Peixes♓</option>
+                </select>
+                <p style="font-size: 0.9rem; color: #555;">Segure <strong>Ctrl</strong> (ou <strong>Cmd</strong> no Mac) para selecionar várias opções.</p>
+            </div>
+            <div class="form-group">
+                <label for="horario-preferido">⏰Qual o horário que você prefere para assistir as aulas?</label>
+                <input type="time" id="horario-preferido" name="horario-preferido">
+            </div>
+          
+            <div class="form-group">
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Cadastrar">
+            </div>
+        </form>
+        <footer>
+            <p> ✨Obrigado por se inscrever em nosso curso!! retornaremos logo logo por meio de seu email✨</p>
+          </footer>
+        </div>
+    </main>
+
+    <footer>
+        <p>IFRN Campus Santa Cruz</p>
+        <p>🖥️Trabalho de Autoria Web🖥️</p>
+        <p>Prof. Marcelo Figueiredo Barbosa Júnior👨🏽‍🏫</p>
+        <p>Componentes:</p>        
+        <p>✨Ayslla Beatriz Soares da Silva✨</p>
+        <p>✨Gizelly Lima Gomes✨</p>
+        <p>✨Myllena Jayane Dos Santos Oliveira✨</p>
+    </footer>
+</body>
+</html>
